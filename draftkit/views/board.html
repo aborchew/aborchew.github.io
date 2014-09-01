@@ -1,11 +1,11 @@
 <div class="pad10">
 
   <div class="row clear-fix clearfix">
-    <div ng-repeat="team in teams | limitTo:6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
+    <div ng-repeat="team in teams | limitTo:4" ng-include="'views/teamView.html'" class="teamView col3" ng-controller="TeamviewCtrl"></div>
   </div>
 
   <div class="row clear-fix clearfix">
-    <div ng-repeat="team in teams | limitTo:-6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
+    <div ng-repeat="team in teams | limitTo:-4" ng-include="'views/teamView.html'" class="teamView col3" ng-controller="TeamviewCtrl"></div>
   </div>
 
 </div>
@@ -15,6 +15,6 @@
 
   setInterval(function () {
     location.reload();
-  }, 10000)
+  }, 30000)
 
 </script>
