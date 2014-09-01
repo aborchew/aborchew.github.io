@@ -1,9 +1,13 @@
-<div class="row clear-fix clearfix">
-  <div ng-repeat="team in teams | limitTo:6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
-</div>
+<div class="pad10">
 
-<div class="row clear-fix clearfix">
-  <div ng-repeat="team in teams | limitTo:-6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
+  <div class="row clear-fix clearfix">
+    <div ng-repeat="team in teams | limitTo:6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
+  </div>
+
+  <div class="row clear-fix clearfix">
+    <div ng-repeat="team in teams | limitTo:-6" ng-include="'views/teamView.html'" class="teamView col2" ng-controller="TeamviewCtrl"></div>
+  </div>
+
 </div>
 
 
