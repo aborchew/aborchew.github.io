@@ -1,7 +1,7 @@
-<ul ng-repeat="train in data" ng-if="train.visible">
-  <li ng-repeat="day in train.historicalData" ng-if="day.Event">
+<ul>
+  <li ng-repeat="day in displayData() | orderBy:'day' | filter:{visible:true}" ng-if="day.Event" ng-animate="'animate'">
     <h5 class="text-primary">{{ day.Event }}</h5>
-    <span class="pull-left">Train {{ train.train }}</span>
+    <span class="pull-left">Train {{ day.Train }}</span>
     <small class="text-muted pull-right">Day {{ day.day }}</small>
   </li>
 </ul>
