@@ -1,0 +1,51 @@
+[{
+  "redirect_url": "",
+  "phone_lightbox": "/compare/phone_lightbox/6ff242a7-3cc1-415a-87f4-05fb9c580471/",
+  "redirect_phone": null,
+  "referral_enabled": true,
+  "description": "Lock in low rates now and enjoy two years of electricity price protection.",
+  "state": "OH",
+  "contract_term_display": "24 months",
+  "estimated_months_delay": 2,
+  "supplier_rating": "5",
+  "is_phone_lightbox": false,
+  "contract_type_display": "Fixed",
+  "fees": [
+    {
+      "label": "Early Termination Fee",
+      "description": "Early termination of your agreement will result in a cancellation fee of $100.",
+      "amount": 100
+    }
+  ],
+  "lead_type": "normal",
+  "special_offers": [],
+  "supplier_name": "Just Energy",
+  "contract_type": "FIX",
+  "savings_percent": null,
+  "doc_urls": [
+    {
+      "doc_label": "Terms &amp; Conditions",
+      "url": "/legal-document/natural_gas/945a5bd2-15e1-4390-bc98-1f25db260240/bcb78c1c-1743-4393-9d65-7781cd8b6cdb"
+    }
+  ],
+  "supplier_blurb": "In operation since 1997, &lt;a href=\"https://www.chooseenergy.com/suppliers/just-energy/\"&gt;Just Energy&lt;/a&gt; and its family of companies currently provides green energy and commodity-supply solutions to millions of residences and businesses in 14 states and 6 provinces throughout North America, including New York, Ohio, Pennsylvania and Texas.",
+  "uuid_field_name": "gas_price_uuid",
+  "etf_description": "Early termination of your agreement will result in a cancellation fee of $100.",
+  "uuid": "810ae143-f036-4a79-ad33-a62d4bd449fd",
+  "supplier_phone": "855-419-3586",
+  "price_cents": "679.00",
+  "name": "Buckeye Gas 24",
+  "remove_date": null,
+  "logo_path": "img/providers/just-energy.png",
+  "percent_green": 100,
+  "supplier_profile_url": "/suppliers/just-energy/",
+  "contract_term": 24,
+  "state_supplier_id": 26,
+  "etf": 10000,
+  "plan_choose_count": 0,
+  "supplier_review_count": 3,
+  "ce_admin_rank": 9999,
+  "external_supplier_id": "",
+  "price_dollars": "6.79",
+  "through_date": null
+}]

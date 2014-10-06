@@ -1,0 +1,12 @@
+<div><div class="plan-info"><h4>Your Electricity Plan</h4><div ng-repeat="plan in plans"><img class="pull-left" ng-src="https://www.chooseenergy.com/static/{{plan.logo_path }}"><h5 class="pull-left"><small>{{ plan.supplier_name }}</small><br>{{ plan.name }}</h5></div></div><div class="checkout-nav"><a ui-sref="checkout.{{ group.state }}" class="big-label" ui-sref-active="active" ng-repeat="group in fields.fieldGroups"><i class="glyphicon glyphicon-user"></i></a> <!-- <a ui-sref="checkout.personal" class="big-label" ui-sref-active="active">
+      <i class="glyphicon glyphicon-user"></i>
+    </a>
+    <a ui-sref="checkout.service" class="big-label" ui-sref-active="active">
+      <i class="glyphicon glyphicon-home"></i>
+    </a>
+    <a ui-sref="checkout.billing" class="big-label" ui-sref-active="active">
+      <i class="glyphicon glyphicon-credit-card"></i>
+    </a>
+    <a ui-sref="checkout.authorizations" class="big-label" ui-sref-active="active">
+      <i class="glyphicon glyphicon-ok"></i>
+    </a> --></div><form name="form" role="form" novalidate><div ui-view=""></div></form><span class="label label-small label-warning">Required Field</span><br><br><hr><pre>{{ formValues }}</pre></div>

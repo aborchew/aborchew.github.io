@@ -1,0 +1,82 @@
+{
+  "fieldGroups": [
+    {
+      "title": "Personal Information",
+      "state": "personal",
+      "fields": [
+        {
+          "type": "text",
+          "required": true,
+          "label": "First Name",
+          "subtext": null,
+          "value": "personal_first_name",
+          "placeholder": null,
+          "pattern": "/^[a-zA-Z\\s]+$/",
+          "minLength": 1,
+          "maxLength": 25,
+          "match": null,
+          "invalid": {
+            "pattern": "Only characters A-Z and spaces are allowed.",
+            "length": "Please enter a valid name between 1 and 25 characters",
+            "format": "Please enter a valid name.",
+            "match": null
+          }
+        },
+        {
+          "type": "text",
+          "required": true,
+          "label": "Last Name",
+          "subtext": null,
+          "value": "personal_last_name",
+          "placeholder": null,
+          "pattern": "/^[a-zA-Z\\s]+$/",
+          "minLength": 1,
+          "maxLength": 25,
+          "match": null,
+          "invalid": {
+            "pattern": "Only characters A-Z and spaces are allowed.",
+            "length": "Please enter a valid name between 1 and 25 characters",
+            "format": "Please enter a valid name.",
+            "match": null
+          }
+        },
+        {
+          "type": "email",
+          "required": true,
+          "label": "Email",
+          "subtext": null,
+          "value": "personal_email",
+          "placeholder": null,
+          "pattern": null,
+          "minLength": null,
+          "maxLength": null,
+          "match": null,
+          "invalid": {
+            "pattern": null,
+            "length": null,
+            "format": "Please enter a valid email address.",
+            "match": null
+          }
+        },
+        {
+          "type": "email",
+          "required": true,
+          "label": "Confirm Email",
+          "subtext": null,
+          "value": "personal_email_confirm",
+          "placeholder": null,
+          "pattern": null,
+          "minLength": null,
+          "maxLength": null,
+          "match": "personal_email",
+          "invalid": {
+            "pattern": null,
+            "length": null,
+            "format": "Please enter a valid email address.",
+            "match": "Both email addresses must be identical."
+          }
+        }
+      ]
+    }
+  ]
+}
