@@ -1,0 +1,38 @@
+<div class="logo">
+  <img src="images/ec75321c.uptake.png" />
+</div>
+
+<div class="btn-group btn-group-justified">
+  <label class="btn btn-info">Filter:</label>
+  <label ng-repeat="filter in filters" class="btn btn-info" ng-model="filter.selected" btn-checkbox="" tooltip="{{ getEventLabel(filter.value) }}" tooltip-append-to-body="true" tooltip-trigger="mouseenter" tooltip-placement="bottom">
+    <i class="uptake-icon uptake-{{ filter.value }}"></i>
+  </label>
+</div>
+
+<accordion close-others="false" class="scroll-area">
+  <accordion-group ng-repeat="event in events | utDataFeedFilter:filters:timeBegins" is-open="event.expanded" ng-animate="'animate'" class="feed-item" ng-class="{'last': event.isLast}">
+    <accordion-heading>
+      <i class="uptake-icon uptake-{{ event.Event }}"></i>&nbsp;{{ getEventLabel(event.Event) }}
+      <small class="glyphicon glyphicon-plus pull-right" ng-class="{'glyphicon-minus': event.expanded}"></small>
+      <span class="score pull-right">({{ event.day }}, {{ event.HealthScore }})&nbsp;</span>
+    </accordion-heading>
+    <table class="table table-condensed">
+      <tr>
+        <td>Recurrance on</td>
+        <td>{{ event.date | date:'M/d/yyyy' }}&nbsp;<i class="glyphicon glyphicon-calendar"></i></td>
+      </tr>
+      <tr>
+        <td>Health Score</td>
+        <td>{{ event.HealthScore }}</td>
+      </tr>
+      <tr>
+        <td>Fault Number</td>
+        <td>XXXXXXXX</td>
+      </tr>
+      <tr>
+        <td>Fleet/order</td>
+        <td>?</td>
+      </tr>
+    </table>
+  </accordion-group>
+</accordion>

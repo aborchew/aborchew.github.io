@@ -1,0 +1,17 @@
+<div id="chart"></div>
+<div id="assets"></div>
+<div id="time"></div>
+
+<svg>
+  <defs>
+    <pattern id="pattern-stripe"
+      width="40" height="40"
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(45)">
+      <rect width="20" height="40" transform="translate(0,0)" fill="white"></rect>
+    </pattern>
+    <mask id="mask-stripe">
+      <rect x="0" y="0" width="10000" height="10000" fill="url(#pattern-stripe)" />
+    </mask>
+  </defs>
+</svg>
