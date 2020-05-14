@@ -1,0 +1,17 @@
+ul {
+  display: block;
+  overflow: hidden;
+}
+ul li {
+  display: block;
+  float: left;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=/rearranger.f69400ca.css.map */
